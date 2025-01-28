@@ -1,0 +1,267 @@
+body {
+    background-color: #212429;
+    color: white;
+    margin: 0px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.inbio {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.inbio img {
+    border: none;
+    -moz-border-radius : 75px;
+    -webkit-border-radius : 75px;
+    border-radius : 75px;
+    width:15%;
+    height:15%;
+    margin: 15px
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color: white;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.buttons button {
+    background-color: #212429;
+    color: #d01654;
+    border: 1px black solid;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    transition: 1s;
+    background-color: gray;
+}
+
+.buttons li:hover {
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+.buttons li {
+    color: white;
+}
+
+.presentation {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap : 150px;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.Texte1 {
+    max-width: 800px;
+}
+
+.Texte1 h1 {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.Texte1 h2 {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 0.5;
+}
+
+.Texte1 h2 span {
+    color: #d01654;
+}
+
+.Texte1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.textsocial {
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.icon {
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    gap: 50px
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.photoN {
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.done p span {
+    color: #d01654;
+}
+
+.donetitle {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    line-height: 0;
+    margin-bottom: 30px;
+}
+.case {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    gap : 30px;
+    text-align: justify;
+    margin-bottom: 60px;
+}
+
+.case1 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #d01654;
+}
+
+.case2 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #d01654;
+}
+
+.case3 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #d01654;
+}
+
+.case4 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #d01654;
+}
+
+.case5 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #d01654;
+}
+
+.case6 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #d01654;
+}
+
+.portfoliotitle {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio p span {
+    color: #d01654;
+}
+.carre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap : 30px;
+    text-align: justify;
+    margin-bottom: 60px;
+}
+
+.carre img:hover {
+        transition: transform 1s;
+        transform: scale(1.1);
+}
+
+.carre h1 {
+    font-size: 1.1rem;
+}
+
+.carre1 img {
+}
+
+.carre1 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.carre2 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.carre3 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.carre4 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.carre5 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.carre6 {
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px black;
+}
