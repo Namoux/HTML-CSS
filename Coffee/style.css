@@ -1,7 +1,7 @@
 body {
     background-color: #e2d9c8;
-    margin: 0px;
-    width: 100%;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -9,9 +9,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* max-width: 100%; */
-    /* max-width: 1300px; */
-    margin: 0px 60px 30px 60px; /* haut | droit | bas | gauche */
+    margin-bottom: 2%;
     padding: 50px;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -24,9 +22,10 @@ header button {
     border-radius: 20px;
     cursor: pointer;
     padding: 8px;
+    border: none;
 }
 
-.welcome button:hover{
+header button:hover{
     transition: 1s;
     transform: scale(1.2);
     background-color: whitesmoke;
@@ -34,15 +33,19 @@ header button {
 
 .titlemenu {
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 20% 70% 10%;
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
 }
 
 .titlemenu img {
-    align-items: right;
-    justify-content: right;
+    width: 30px; 
+    height: 30px;
+}
+
+.titlemenu h2 {
+    font-size: 1.3rem;
 }
 
 .titlemenu img:hover {
@@ -76,12 +79,18 @@ header button {
     margin-top: 0px;
 }
 
+
+
 .CTA {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
     justify-content: center;
-    gap: 150px;
     color : #524c40;
+}
+
+.logo img {
+    width: 70px; 
+    height: 70px;
 }
 
 .logo img:hover {
@@ -93,28 +102,7 @@ header button {
     margin-top: 0px;
 }
 
-.logo1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo4 {
+.logo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,10 +111,7 @@ header button {
 
 .section1{
     background-color: #eeebe6;
-    max-width: 1300px;
-    margin: 0px 60px 0px 60px;
     padding: 20px;
-    line-height: 8px;
     color: #524c40;
 }
 
@@ -140,6 +125,7 @@ header button {
 .section1 span {
     font-weight: bold;
 }
+
 .section1 button {
     background-color: #524c40;
     color: white;
@@ -161,54 +147,51 @@ header button {
 }
 
 .cafe {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
+}
+
+.cafe p {
+    font-size: 1rem;
 }
 
 .prix {
-    display: flex;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
     justify-content: center;
 }
 
-.case1 {
-    background-color: #eeebe1;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 0px solid black;
+.prix button {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    border: none;
 }
 
-.case2 {
+.case {
     background-color: #eeebe1;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 0px solid black;
 }
 
-.case3 {
-    background-color: #eeebe1;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 0px solid black;
-}
-
-.case4 {
-    background-color: #eeebe1;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 0px solid black;
+.case img {
+    width: 100%;
+    aspect-ratio: 1/1.3;
+    border-radius: 20% 20% 0% 0%;
 }
 
 .section2 {
     background-image: url(public/Main.png);
-    background-size: 114%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1300px;
-    margin: 0px 60px 0px 60px;
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #524c40;
 }
 
 .section2 button:hover {
@@ -217,43 +200,51 @@ header button {
     background-color: #212429;
 }
 
-.betans {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #524c40;
-}
-
-.betans button {
+.section2 button {
     background-color: #524c40;
     color: white;
     border-radius: 20px;
     cursor: pointer;
     padding: 10px;
+    margin-bottom: 3%;
+    border: none;
 }
 
-.betans h1 {
+.section2 h2 {
     font-size: 2.5rem;
-    margin-top: 0%;
 }
 
- .newsletter {
+.section4 {
     background-image: url(public/end.png);
-    background-size: 114%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1300px;
-    margin: 0px 60px 0px 60px;
-    padding: 50px;
- }
- .join {
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #524c40;
  }
+
+.section4 button {
+    border: none;
+}
+
+.section4 input {
+    border: none;
+    width: 20rem;
+}
+
+input {
+   border-radius: 70px;
+   padding: 10px;
+
+}
+
+.email::placeholder {
+    font-size: 1.2rem;
+}
 
  .mail {
     display: flex;
@@ -261,12 +252,6 @@ header button {
     align-items: center;
     justify-content: center;
     gap: 15%;
- }
-
- input {
-    border-radius: 70px;
-    padding: 10px;
-    width: 350px;
  }
 
  .mail button{
@@ -277,34 +262,147 @@ header button {
     padding: 10px;
  }
 
-.footer {
+footer {
     display : grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: #30261c;
-    background-size: 114%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1300px;
-    margin: 0px 60px 0px 60px;
     padding: 50px;
     gap: 5%;
     color: white;
-
 }
 
-.footer a {
+footer h2 {
+    font-size: 1.3rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+
+}
+footer a {
     color: white;
     text-decoration: none;
-
 }
 
-.footer img:hover {
+footer img {
+    width: 30px; 
+    height: 30px;
+}
+
+footer img:hover {
     transition: 1s;
     transform: scale(1.2);
 }
 
-.footer p:hover {
+footer p:hover {
     transition: 1s;
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 1200px) { /* Ecran d'ordinateur */
+    /* .titlemenu {
+        grid-template-columns: 25% 50% 25%;
+    } */
+
+    .titlemenu {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .CTA {
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+    .cafe {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section2 h2 {
+        font-size: 2rem;
+    }
+
+    .section2 button {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Tablettes et grand smartphones */
+    .titlemenu {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .CTA {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cafe {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section2 h2 {
+        font-size: 1.5rem;
+    }
+
+    .section2 button {
+        padding: 10px;
+    }
+
+    .section4 input {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 480px) { /* Petits smartphones */
+    .titlemenu {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .CTA {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cafe {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section2 h2 {
+        font-size: 1.2rem;
+    }
+
+    .section2 button {
+        padding: 8px;
+    }
+
+    .section4 input {
+        width: 12rem;
+    }
+}
