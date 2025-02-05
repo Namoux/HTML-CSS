@@ -23,12 +23,50 @@ header button {
     cursor: pointer;
     padding: 8px;
     border: none;
+    transition: transform 1s;
 }
 
 header button:hover{
-    transition: 1s;
     transform: scale(1.2);
     background-color: whitesmoke;
+}
+
+.acceuilMobile{
+    display: none;
+}
+
+.menuMobile {
+    display: none;
+    list-style-type: none;
+    margin-bottom: 100px;
+}
+
+.menuMobile a {
+    transition: transform 1s;
+}
+
+.menuMobile a:hover {
+    transform: scale(1.2);
+}
+
+.menuMobile a{
+    color: white;
+    text-decoration: none;
+    transition: transform 1s;
+}
+
+.acceuilMobile img {
+    width: 30px; 
+    aspect-ratio: 1/1;
+    transition: transform 1s;
+}
+
+.accueilMobile h2 {
+    font-size: 1.3rem;
+}
+
+.acceuilMobile img:hover {
+    transform: scale(1.2);
 }
 
 .titlemenu {
@@ -41,7 +79,8 @@ header button:hover{
 
 .titlemenu img {
     width: 30px; 
-    height: 30px;
+    aspect-ratio: 1/1;
+    transition: transform 1s;
 }
 
 .titlemenu h2 {
@@ -49,12 +88,14 @@ header button:hover{
 }
 
 .titlemenu img:hover {
-    transition: 1s;
     transform: scale(1.2);
 }
 
+.titlemenu a {
+    transition: transform 1s;
+}
+
 .titlemenu a:hover {
-    transition: 1s;
     transform: scale(1.2);
 }
 
@@ -79,22 +120,20 @@ header button:hover{
     margin-top: 0px;
 }
 
-
-
 .CTA {
     display: grid;
-    grid-template-columns: 15% 15% 15% 15%;
+    grid-template-columns: repeat(4,15%);
     justify-content: center;
     color : #524c40;
 }
 
 .logo img {
     width: 70px; 
-    height: 70px;
+    aspect-ratio: 1/1;
+    transition: transform 1s;
 }
 
 .logo img:hover {
-    transition: 1s;
     transform: scale(1.2);
 }
 
@@ -111,6 +150,7 @@ header button:hover{
 
 .section1{
     background-color: #eeebe6;
+    background-size: contain;
     padding: 20px;
     color: #524c40;
 }
@@ -133,29 +173,28 @@ header button:hover{
     padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
+    transition: transform 1s;
 }
 
 .section1 button:hover {
-    transition: 1s;
     transform: scale(1.1);
     background-color: #212429;
 }
 
+.section1 img {
+    transition: transform 1s;
+}
+
 .section1 img:hover {
-    transition: 1s;
     transform: scale(1.1);
 }
 
 .cafe {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: repeat(4,20%);
     align-items: center;
     justify-content: center;
-    gap: 25px;
-}
-
-.cafe p {
-    font-size: 1rem;
+    gap: 50px;
 }
 
 .prix {
@@ -178,7 +217,7 @@ header button:hover{
 
 .case img {
     width: 100%;
-    aspect-ratio: 1/1.3;
+    aspect-ratio: 1/1.1;
     border-radius: 20% 20% 0% 0%;
 }
 
@@ -194,13 +233,8 @@ header button:hover{
     color: #524c40;
 }
 
-.section2 button:hover {
-    transition: 1s;
-    transform: scale(1.1);
-    background-color: #212429;
-}
-
 .section2 button {
+    transition: transform 1s;
     background-color: #524c40;
     color: white;
     border-radius: 20px;
@@ -208,6 +242,11 @@ header button:hover{
     padding: 10px;
     margin-bottom: 3%;
     border: none;
+}
+
+.section2 button:hover {
+    transform: scale(1.1);
+    background-color: #212429;
 }
 
 .section2 h2 {
@@ -260,11 +299,16 @@ input {
     border-radius: 20px;
     cursor: pointer;
     padding: 10px;
+    transition: transform 1s;
+ }
+
+ .mail button:hover{
+    transform:  scale(1.1);
  }
 
 footer {
     display : grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6,1fr);
     background-color: #30261c;
     background-size: cover;
     background-repeat: no-repeat;
@@ -289,61 +333,39 @@ footer a {
 
 footer img {
     width: 30px; 
-    height: 30px;
+    aspect-ratio: 1/1;
+    transition: transform 1s;
 }
 
 footer img:hover {
-    transition: 1s;
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+footer p {
+    transition: transform 1s;
 }
 
 footer p:hover {
-    transition: 1s;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-@media screen and (max-width: 1200px) { /* Ecran d'ordinateur */
-    /* .titlemenu {
-        grid-template-columns: 25% 50% 25%;
-    } */
-
+@media screen and (max-width: 900px) { /* Tablettes et grand smartphones */
     .titlemenu {
-        grid-template-columns: 1fr 1fr;
+        display: none;
     }
 
-    .menu {
+    .acceuilMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuMobile {
+        display: flex;
         flex-direction: column;
-        gap: 20px;
-    }
-
-    .CTA {
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-    }
-
-    .cafe {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    footer {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .section2 h2 {
-        font-size: 2rem;
-    }
-
-    .section2 button {
-        padding: 12px;
-    }
-}
-
-@media screen and (max-width: 768px) { /* Tablettes et grand smartphones */
-    .titlemenu {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .menu {
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 20px;
     }
 
@@ -372,14 +394,23 @@ footer p:hover {
     }
 }
 
-@media screen and (max-width: 480px) { /* Petits smartphones */
+@media screen and (max-width: 600px) { /* Petits smartphones */
     .titlemenu {
-        grid-template-columns: 1fr;
+        display: none;
     }
 
-    .menu {
+    .acceuilMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menuMobile {
+        display: flex;
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
     .CTA {
@@ -392,6 +423,7 @@ footer p:hover {
 
     footer {
         grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
     }
 
     .section2 h2 {

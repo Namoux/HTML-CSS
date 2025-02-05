@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     background-color: #212429;
     color: white;
     margin: 0px;
+    font-family: Roboto;
 }
 
 header {
@@ -16,27 +20,34 @@ header {
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 10px;
 }
 
 .inbio img {
     border: none;
-    -moz-border-radius : 75px;
-    -webkit-border-radius : 75px;
     border-radius : 75px;
-    width:15%;
-    height:15%;
+    width: 45px;
+    aspect-ratio: 1/1;
     margin: 15px
 }
 
 .buttons {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7,1fr) ;
     align-items: center;
     justify-content: center;
     gap: 40px;
     color: white;
     list-style-type: none;
     margin-right: 30px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.buttons img {
+    width:30px;
+    aspect-ratio: 1/1;
 }
 
 .buttons button {
@@ -47,56 +58,53 @@ header {
     padding-left: 30px;
     padding-right: 30px;
     cursor: pointer;
+    transition: 1s;
 }
 
 .buttons button:hover {
-    transition: 1s;
+    transform: scale(1.1);
     background-color: gray;
 }
 
-.buttons li:hover {
+.buttons li{
     transition: transform 1s;
+    color: white;
+}
+.buttons li:hover {
     transform: scale(1.1);
 }
 
-.buttons li {
-    color: white;
+main {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .presentation {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     gap : 150px;
     justify-content: center;
-    padding: 50px 0;
 }
 
-.Texte1 {
-    max-width: 800px;
-}
-
-.Texte1 h1 {
-    font-size: 2rem;
+.Texte1 h2 {
+    font-size: 30px;
     margin: 0;
     line-height: 1;
 }
 
-.Texte1 h2 {
-    font-size: 3rem;
+.Texte1 h1 {
+    font-size: 45px;
     margin: 0;
     line-height: 0.5;
 }
 
-.Texte1 h2 span {
+.Texte1 h1 span {
     color: #d01654;
 }
 
 .Texte1 p {
-    font-size: 1.1rem;
+    font-size: 18px;
     line-height: 1.6;
-    margin: 20px 0;
     text-align: justify;
 }
 
@@ -119,6 +127,11 @@ header {
     gap: 20px;
 }
 
+.icon img {
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+
 .skill {
     display: flex;
     flex-direction: row;
@@ -127,76 +140,62 @@ header {
 }
 
 .photoN {
-    margin-right: 30px;
     align-items: center;
     justify-content: center;
 }
 
+.photoN img {
+    width: 300px;
+    aspect-ratio: 1/1.7;
+    border-radius: 10px;
+}
+
 .done p span {
     color: #d01654;
+    font-size: 18px;
+}
+
+.done h2 {
+    font-size: 30px;
+}
+
+.done h3 {
+    font-size: 23px;
 }
 
 .donetitle {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 50px;
     justify-content: center;
+    align-items: center;
     line-height: 0;
     margin-bottom: 30px;
 }
-.case {
+
+.lootcase {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1200px;
-    margin: 0 auto;
     justify-content: center;
     gap : 30px;
     text-align: justify;
     margin-bottom: 60px;
 }
 
-.case1 {
+.case {
     border: 2px solid black;
     padding: 20px;
     box-shadow: 5px 5px 5px #d01654;
 }
 
-.case2 {
-    border: 2px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px #d01654;
-}
-
-.case3 {
-    border: 2px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px #d01654;
-}
-
-.case4 {
-    border: 2px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px #d01654;
-}
-
-.case5 {
-    border: 2px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px #d01654;
-}
-
-.case6 {
-    border: 2px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px #d01654;
+.case img {
+    width:40px;
+    aspect-ratio: 1/1;
 }
 
 .portfoliotitle {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
     line-height: 0;
@@ -205,12 +204,20 @@ header {
 
 .portfolio p span {
     color: #d01654;
+    font-size: 18px;
 }
-.carre {
+
+.portfolio h2 {
+    font-size: 30px;
+}
+
+.portfolio h3 {
+    font-size: 20px;
+}
+
+.lootcarre {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1200px;
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
     gap : 30px;
@@ -218,50 +225,94 @@ header {
     margin-bottom: 60px;
 }
 
-.carre img:hover {
-        transition: transform 1s;
+.lootcarre img {
+    transition: transform 1s;
+}
+
+.lootcarre img:hover {
         transform: scale(1.1);
 }
 
-.carre h1 {
-    font-size: 1.1rem;
+.lootcarre img {
+    width: 100%;
+    aspect-ratio: 4/3;
 }
 
-.carre1 img {
-}
-
-.carre1 {
+.carre {
     border: 2px solid black;
     padding: 20px;
     box-shadow: 5px 5px 5px black;
 }
 
-.carre2 {
-    border: 2px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px black;
+@media screen and (max-width: 900px) { /* Tablettes et grand smartphones */
+    
+    main {
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+    .buttons {
+        display: flex;
+        gap: 15px;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        margin-top: 20px;
+    }
+
+    .presentation {
+        gap: 20px;
+    }
+
+    .Texte1 {
+        padding-left: 80px;
+        padding-right: 80px;
+        border: #212562 1px solid;
+    }
+
+    .lootcase {
+        grid-template-columns: 1fr 1fr;
+        gap : 20px;
+        padding: 0px;
+    }
+
+    .lootcarre {
+        grid-template-columns: 1fr 1fr;
+        gap : 20px;
+    }
 }
 
-.carre3 {
-    border: 2px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px black;
+@media screen and (max-width: 600px) { /* smartphones */
+    main {
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+
+    .buttons {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .presentation {
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .Texte1 {
+        padding-left: 80px;
+        padding-right: 80px;
+        border: #d01654 3px solid;
+    }
+
+    .lootcase {
+        grid-template-columns: 1fr;
+        gap : 20px;
+        padding: 0px;
+    }
+
+    .portfoliotitle{
+        line-height: 1;
+    }
+    .lootcarre {
+        grid-template-columns: 1fr;
+        gap : 20px;
+    }
 }
 
-.carre4 {
-    border: 2px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px black;
-}
-
-.carre5 {
-    border: 2px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px black;
-}
-
-.carre6 {
-    border: 2px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px black;
-}
