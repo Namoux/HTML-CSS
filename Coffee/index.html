@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <link rel="stylesheet" href="style.css">
@@ -10,31 +10,39 @@
 
 <body>
     <header>
-        <div class = "titlemenu">
-            <div><h2>COFFEE</h2></div>
-            <div class = "menu">
-                <a href="#"><li>HOME</li></a>
-                <a href="#"><li>COFFEE</li></a>
-                <a href="#"><li>BAKERY</li></a>
-                <a href="#"><li>SHOP</li></a>
-                <a href="#"><li>ABOUT</li></a>
-                <a href="#"><li>LOGIN</li></a>
-            </div>
-            <div><a href="#"><img src="public/search.png" alt="Photo de loupe" ></a></div>
+
+        <div class="titlemenu">
+            <h1>COFFEE</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">COFFEE</a></li>
+                    <li><a href="#">BAKERY</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                </ul>
+            </nav>
+            <a href="#"><img src="public/search.png" alt="Rechercher"></a>
         </div>
-        <div class = "acceuilMobile">
+
+        <div class="acceuilMobile">
             <h2>COFFEE</h2>
-            <a href="#"><img src="public/search.png" alt="Photo de loupe" ></a>
+            <a href="#"><img src="public/search.png" alt="Rechercher"></a>
         </div>
-        <div class = "menuMobile">
-            <a href="#"><li>HOME</li></a>
-            <a href="#"><li>COFFEE</li></a>
-            <a href="#"><li>BAKERY</li></a>
-            <a href="#"><li>SHOP</li></a>
-            <a href="#"><li>ABOUT</li></a>
-            <a href="#"><li>LOGIN</li></a>
-        </div>
-        <div class = "welcome">
+
+        <nav>
+            <ul class="menuMobile">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COFFEE</a></li>
+                <li><a href="#">BAKERY</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </nav>
+
+        <div class="welcome">
             <h2>Welcome!</h2>
             <h1>We serve the richest coffee<br>in the city!</h1>
             <button>Order Now</button>
@@ -42,162 +50,194 @@
     </header>
 
     <main>
-        <section class = "CTA">
-            <div class = "logo">
-                <a href="#"><img src="public/cup.png" alt="Photo de cup"></a>
+        <section class="CTA">
+            <div class="logo">
+                <a href="#"><img src="public/cup.png" alt="Tasse de café chaud"></a>
                 <p>Hot Coffee</p>
             </div>
-            <div class = "logo">
-                <a href="#"><img src="public/ice.png" alt="Photo de ice"></a>
+            <div class="logo">
+                <a href="#"><img src="public/ice.png" alt="Café glacé"></a>
                 <p>Cold Coffee</p>
             </div>
-            <div class = "logo">
-                <a href="#"><img src="public/coffee.png" alt="Photo de coffee"></a>
+            <div class="logo">
+                <a href="#"><img src="public/coffee.png" alt="Gobelet de café"></a>
                 <p>Cup Coffee</p>
             </div>
-            <div class = "logo">
-                <a href="#"><img src="public/cake.png" alt="Photo de dessert"></a>
+            <div class="logo">
+                <a href="#"><img src="public/cake.png" alt="Dessert"></a>
                 <p>Dessert</p>
             </div>
         </section>
 
-        <section class = "section1">
-            <div class = "coffee">
-                <div><h2>OUR SPECIAL COFFEE</h2></div>
-                <div class = "cafe">
-                    <div class = "case">
+        <section class="section1">
+            <article class="coffee">
+                <h2>OUR SPECIAL COFFEE</h2>
+                <div class="cafe">
+                    <div class="case">
                         <a href="#"><img src="public/latte.jpg" alt="Photo de latte"></a>
                         <p><span>Lungo Coffee</span></p>
                         <p>Lorem ipsum dolor, sit amet.</p>
-                        <div class = "prix">
+                        <div class="prix">
                             <p><span>19€</span></p>
                             <button>Order Now</button>
-                        </div> 
+                        </div>
                     </div>
-                    <div class = "case">
+
+                    <div class="case">
                         <a href="#"><img src="public/coffee.jpg" alt="Photo de coffee"></a>
                         <p><span>Dalgona Coffee</span></p>
                         <p>Lorem ipsum dolor, sit amet.</p>
-                        <div class = "prix">
+                        <div class="prix">
                             <p><span>15€</span></p>
                             <button>Order Now</button>
-                        </div> 
+                        </div>
                     </div>
-                    <div class = "case">
+                    <div class="case">
                         <a href="#"><img src="public/creme1.jpg" alt="Photo de latte"></a>
                         <p><span>Iced Coffee</span></p>
                         <p>Lorem ipsum dolor, sit amet.</p>
-                        <div class = "prix">
+                        <div class="prix">
                             <p><span>14€</span></p>
                             <button>Order Now</button>
-                        </div> 
+                        </div>
                     </div>
-                    <div class = "case">
+                    <div class="case">
                         <a href="#"><img src="public/cup.jpg" alt="Photo de latte"></a>
                         <p><span>Filter Coffee</span></p>
                         <p>Lorem ipsum dolor, sit amet.</p>
-                        <div class = "prix">
+                        <div class="prix">
                             <p><span>5€</span></p>
                             <button>Order Now</button>
-                        </div> 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class = "dessert">
-                <div><h2>OUR SPECIAL DESSERT</h2></div>
-                <div class = "cafe">
-                    <div class = "case">
+            </article>
+
+            <article class="dessert">
+                <h2>OUR SPECIAL DESSERT</h2>
+                <div class="cafe">
+                    <div class="case">
                         <a href="#"><img src="public/choco.jpg" alt="Photo de latte"></a>
                         <p><span>Gulab Jamun</span></p>
                         <p>Lorem ipsum dolor, sit amet.</p>
-                        <div class = "prix">
+                        <div class="prix">
                             <p><span>19€</span></p>
                             <button>Order Now</button>
-                        </div> 
+                        </div>
                     </div>
-                    <div class = "case">
+                    <div class="case">
                         <a href="#"><img src="public/tiramisu.jpeg" alt="Photo de coffee"></a>
                         <p><span>Chocolate Tiramisu</span></p>
                         <p>Lorem ipsum dolor, sit amet.</p>
-                        <div class = "prix">
+                        <div class="prix">
                             <p><span>25€</span></p>
                             <button>Order Now</button>
-                        </div> 
+                        </div>
                     </div>
-                    <div class = "case">
+                    <div class="case">
                         <a href="#"><img src="public/sugar.jpg" alt="Photo de latte"></a>
                         <p><span>Churros .</span></p>
                         <p>Lorem ipsum dolor, sit amet.</p>
-                        <div class = "prix">
+                        <div class="prix">
                             <p><span>17€</span></p>
                             <button>Order Now</button>
-                        </div> 
+                        </div>
                     </div>
-                    <div class = "case">
+                    <div class="case">
                         <a href="#"><img src="public/cake.jpg" alt="Photo de latte"></a>
                         <p><span>Australian Lamingtons</span></p>
                         <p>Lorem ipsum dolor, sit amet.</p>
-                        <div class = "prix">
+                        <div class="prix">
                             <p><span>28€</span></p>
                             <button>Order Now</button>
-                        </div> 
+                        </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </section>
 
-        <section class = "section2">
-                <h2>Check out our best<br> coffee betans</h2>
-                <button>Explore our products >></button>
+        <section class="section2">
+            <h2>Check out our best<br> coffee betans</h2>
+            <button>Explore our products >></button>
         </section>
 
-        <section class = "section3">
-                <script src="https://static.elfsight.com/platform/platform.js" async></script>
-                <div class="elfsight-app-8af7e087-8c66-4395-8fa7-1917526301d7" data-elfsight-app-lazy></div>
+        <section class="section3">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-8af7e087-8c66-4395-8fa7-1917526301d7" data-elfsight-app-lazy></div>
         </section>
 
-        <section class = "section4">
-                <h3>Join in and get 15% Off</h3>
-                <p>subscribe to our newsletter and get 15% off discount code</p>
-                <div class ="mail">
-                    <input class="email" type="email" placeholder="&#9993; email adress">
-                    <button>Subscribe</button>
-                </div>
+        <section class="section4">
+            <h3>Join in and get 15% Off</h3>
+            <p>subscribe to our newsletter and get 15% off discount code</p>
+            <form class="mail" action="#" method="post">
+                <label for="email" class="visually-hidden">Adresse email</label>
+                <input class="email" type="email" id="email" name="email" placeholder="✉ email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <div><h2>COFFEE</h2></div>
-        <div class = "column">
+        <h2>COFFEE</h2>
+        <nav class="column" aria-label="Confidentialité">
             <h4>PRIVACY</h4>
-            <a href="#"><p>Terms of use</p></a>
-            <a href="#"><p>Privacy policy</p></a>
-            <a href="#"><p>Cookies</p></a>
-        </div>
-        <div class = "column">
+            <a href="#">
+                <p>Terms of use</p>
+            </a>
+            <a href="#">
+                <p>Privacy policy</p>
+            </a>
+            <a href="#">
+                <p>Cookies</p>
+            </a>
+        </nav>
+
+        <nav class="column" aria-label="Services">
             <h4>SERVICES</h4>
-            <a href="#"><p>Shop</p></a>
-            <a href="#"><p>Order ahead</p></a>
-            <a href="#"><p>Menu</p></a>
-        </div>
-        <div class = "column">
+            <a href="#">
+                <p>Shop</p>
+            </a>
+            <a href="#">
+                <p>Order ahead</p>
+            </a>
+            <a href="#">
+                <p>Menu</p>
+            </a>
+        </nav>
+
+        <nav class="column" aria-label="À propos">
             <h4>ABOUT US</h4>
-            <a href="#"><p>Find a location</p></a>
-            <a href="#"><p>About us</p></a>
-            <a href="#"><p>Our story</p></a>
-        </div>
-        <div class = "column">
+            <a href="#">
+                <p>Find a location</p>
+            </a>
+            <a href="#">
+                <p>About us</p>
+            </a>
+            <a href="#">
+                <p>Our story</p>
+            </a>
+        </nav>
+
+        <nav class="column" aria-label="Informations">
             <h4>INFORMATION</h4>
-            <a href="#"><p>Plans & pricing</p></a>
-            <a href="#"><p>Self your products</p></a>
-            <a href="#"><p>Jobs</p></a>
-        </div>
-        <div class = "column">
+            <a href="#">
+                <p>Plans & pricing</p>
+            </a>
+            <a href="#">
+                <p>Sell your products</p>
+            </a>
+            <a href="#">
+                <p>Jobs</p>
+            </a>
+        </nav>
+
+        <nav class="column" aria-label="Réseaux sociaux">
             <h4>SOCIAL MEDIA</h4>
-            <a href="#"><img src="public/Facebook.png" alt="Photo"></a>
-            <a href="#"><img src="public/Instagram.png" alt="Photo"></a>
-            <a href="#"><img src="public/Spotify.png" alt="Photo"></a>
-        </div>
+            <a href="#"><img src="public/Facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="public/Instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="public/Spotify.png" alt="Spotify"></a>
+        </nav>
     </footer>
 </body>
+
 </html>

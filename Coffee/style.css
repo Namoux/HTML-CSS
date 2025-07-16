@@ -83,7 +83,7 @@ header button:hover{
     transition: transform 1s;
 }
 
-.titlemenu h2 {
+.titlemenu h1 {
     font-size: 1.3rem;
 }
 
@@ -100,17 +100,16 @@ header button:hover{
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    list-style-type: none;
+  list-style: none;
+  display: flex;
+  gap: 50px;
 }
 
-.menu a{
-    color: white;
-    text-decoration: none;
+.menu li a {
+  text-decoration: none;
+  color: white;
 }
+
 
 .welcome h2{
     margin-bottom: 0px;
@@ -159,6 +158,7 @@ header button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 50px;
 }
 
@@ -305,6 +305,15 @@ input {
  .mail button:hover{
     transform:  scale(1.1);
  }
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
 footer {
     display : grid;
